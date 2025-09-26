@@ -17,6 +17,9 @@ for key , val in weather_data.items():
 for val in weather_data.values():
     print(val)
 
+for key in weather_data.keys():
+    print(key)
+
 emp.update({"age":60})
 print(emp)
 

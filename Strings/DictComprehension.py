@@ -6,3 +6,6 @@ print(sq)
 books = [["python for beginner",500],["black book java",600],["C#",800]]
 title_length = { item[0]:len(item[0]) for item in books }
 print(title_length)
+print(type(num))
+print(num, end="!\n")
+print(divmod(17, 5))

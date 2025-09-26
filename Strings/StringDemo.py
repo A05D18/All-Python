@@ -8,13 +8,11 @@ print(not_present)
 print("------------------------")
 print(s[8])
 print(s[-8])
-print(s[3:10])
-print(s[-10:-3])
+print(s[3:11])
+print(s[-10:-3]) #start from -10 to serially print to -3
 #print(s[40])   IndexError: string index out of bound
-print(s[2:14:2])
-print(s[::-1])
-'''for third negative,start index should be greater than end index and it reverse the string if no value
-is given it takes the entire string'''
+print(s[2:14:2]) #start index:end index:skip value
+print(s[::-1])#prints in reverse order if start and end index not specified
 print(s[:10] + s[10:])
 
 print("-----------char classification--------------------------")

@@ -28,3 +28,4 @@ t3 = tuple(zip(t1,t2))
 print(t3)
 
 print(cards[::-1]) #reverse order print
+print(cards[0:3])

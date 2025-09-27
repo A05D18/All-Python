@@ -40,9 +40,9 @@ print("---------------")
 sort_by_age = list(filter(lambda item: item['age'] > 30, emp))
 print(sort_by_age)
 
-sort_by_sal = sorted(emp,key=lambda item: item['salary'])
+sort_by_sal = sorted(emp, key=lambda item: item['salary'])
 print(sort_by_sal)
 
-sort_by_java = list(filter(lambda item: "Java" in item['skills']  , emp))
+sort_by_java = list(filter(lambda item: "Java" in item['skills'], emp))
 print(sort_by_java)
 help(sorted)

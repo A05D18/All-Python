@@ -34,36 +34,36 @@ def display_all_students(students):
         print("No students in the list!")
         return
     print("\nAll Students:")
-    for student in students:
-        print(student)
-        print(f"GPA: {student.calculate_gpa():.2f}\n")
+    for s in students:
+        print(s)
+        print(f"GPA: {s.calculate_gpa():.2f}\n")
 
 
 def search_by_id(students, rollno):
-    for student in students:
-        if student.rollno == rollno:
-            print(f"\nStudent found:\n{student}")
-            print(f"GPA: {student.calculate_gpa():.2f}")
+    for s in students:
+        if s.rollno == rollno:
+            print(f"\nStudent found:\n{s}")
+            print(f"GPA: {s.calculate_gpa():.2f}")
             return
     print(f"\nNo student found with roll number {rollno}")
 
 
 def search_by_name(students, name):
     found = False
-    for student in students:
-        if student.name.lower() == name.lower():
-            print(f"\nStudent found:\n{student}")
-            print(f"GPA: {student.calculate_gpa():.2f}")
+    for s in students:
+        if s.name.lower() == name.lower():
+            print(f"\nStudent found:\n{s}")
+            print(f"GPA: {s.calculate_gpa():.2f}")
             found = True
     if not found:
         print(f"\nNo student found with name {name}")
 
 
 def calculate_student_gpa(students, rollno):
-    for student in students:
-        if student.rollno == rollno:
-            gpa = student.calculate_gpa()
-            print(f"\nThe GPA of {student.name} is: {gpa:.2f}")
+    for s in students:
+        if s.rollno == rollno:
+            gpa = s.calculate_gpa()
+            print(f"\nThe GPA of {s.name} is: {gpa:.2f}")
             return
     print(f"\nNo student found with roll number {rollno}")
 

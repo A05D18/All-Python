@@ -22,11 +22,12 @@ class student:
 
     def calculate_gpa(self):
         subjects = ["Linux", "Java", "DBMS"]
-        weights = [1/3, 1/2, 1/4]
+        weights = [1 / 3, 1 / 2, 1 / 4]
         gpa = 0
         for i in range(len(subjects)):
             gpa += weights[i] * self.marks[subjects[i]]
         return gpa
+
 
 def display_all_students(students):
     if not students:
@@ -37,6 +38,7 @@ def display_all_students(students):
         print(student)
         print(f"GPA: {student.calculate_gpa():.2f}\n")
 
+
 def search_by_id(students, rollno):
     for student in students:
         if student.rollno == rollno:
@@ -44,6 +46,7 @@ def search_by_id(students, rollno):
             print(f"GPA: {student.calculate_gpa():.2f}")
             return
     print(f"\nNo student found with roll number {rollno}")
+
 
 def search_by_name(students, name):
     found = False
@@ -55,6 +58,7 @@ def search_by_name(students, name):
     if not found:
         print(f"\nNo student found with name {name}")
 
+
 def calculate_student_gpa(students, rollno):
     for student in students:
         if student.rollno == rollno:
@@ -62,6 +66,7 @@ def calculate_student_gpa(students, rollno):
             print(f"\nThe GPA of {student.name} is: {gpa:.2f}")
             return
     print(f"\nNo student found with roll number {rollno}")
+
 
 def main():
     students = []
@@ -98,6 +103,7 @@ def main():
                 break
             case _:
                 print("Invalid choice! Please enter a number between 1 and 5.")
+
 
 if __name__ == "__main__":
     main()

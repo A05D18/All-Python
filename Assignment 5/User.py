@@ -31,7 +31,7 @@ class user:
                         print(Transaction.withdraw_from_account(self.acc))
                     case 3:
                         print("Thank you for using the banking system!")
-                        exit()
+                        break
                     case _:
                         print("Invalid choice. Please select 1, 2, or 3.")
             except ValueError:
@@ -41,16 +41,16 @@ class user:
 # Main program to demonstrate functionality
 if __name__ == "__main__":
     # # Create a SavingsAccount (personal)
-    # savings_acc = SavingsAccount(123, "Amar", 10000.00, "savings")
-    # user1 = user(savings_acc)
-    # print("Starting Savings Account:")
-    # user1.run()
-    #
-    # # Create a SavingsAccount (corporate)
-    # corporate_acc = SavingsAccount(124, "Dhundiraj", 20000.00, "corporate")
-    # user2 = user(corporate_acc)
-    # print("\nStarting Corporate Savings Account:")
-    # user2.run()
+    savings_acc = SavingsAccount(123, "Amar", 10000.00, "savings")
+    user1 = user(savings_acc)
+    print("Starting Savings Account:")
+    user1.run()
+
+    # Create a SavingsAccount (corporate)
+    corporate_acc = SavingsAccount(124, "Dhundiraj", 20000.00, "corporate")
+    user2 = user(corporate_acc)
+    print("\nStarting Corporate Savings Account:")
+    user2.run()
 
     # Create a CurrentAccount
     current_acc = CurrentAccount(125, "Pratham", 15000.00, "current")

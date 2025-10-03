@@ -16,3 +16,4 @@ def isPowerOfTwo(n):
 # Read input and print output
 n = int(input("enter no: "))
 print(isPowerOfTwo(n))
+
